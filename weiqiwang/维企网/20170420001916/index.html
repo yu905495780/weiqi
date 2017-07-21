@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+
+
+
+
+
+<!-- // base css -->
+
+
+
+
+
+
+
+<script src="jquery-1.7.2.min.js"></script> 
+<script src="bootstrap.js"></script> 
+
+<!--common script for all pages--> 
+<script src="global.js"></script>
+<script src="custom.js"></script>
+    
+
+
+
+
+
+
+
+<link media="all" href="index.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+	
+	
+<div class="login">
+    <div class="login-header">
+        <div class="note"><h5 class="text-gray">已有账号</h5><h4><a href="http://vipqi.cn/login">登录 / </a><a href="http://vipqi.cn/">返回首页</a></h4></div>
+        <div class="login-title"><a href="javascript:void(0)" class="on">企业用户注册</a><a href="http://vipqi.cn/user/lawyerRegister">律师注册</a></div>
+    </div> 
+    <div class="login-box">
+        <form id="inputForm" method="post" class="form-horizontal" novalidate="novalidate" action="http://vipqi.cn/user/custRegister"> 
+            <div class="form-group">
+                <label class="control-label col-xs-3">企业名称:</label>
+                <div class="col-xs-9">
+                  <input id="firm" name="firm" value="" class="form-control w300" placeholder="请输入企业名称" type="text">
+                </div>
+            </div>  
+            <div class="form-group">
+                <label class="control-label col-xs-3">手机号码:</label>
+                <div class="col-xs-9">
+                  <input id="secMobile" name="secMobile" value="" class="form-control w300" placeholder="请输入手机号" type="text">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-xs-3">短信验证:</label>
+                <div class="col-xs-9">
+					<input name="code" id="code" class="form-control pull-left w200" maxlength="4" value="" type="text">
+					<input id="getCode" onclick="sendMessage()" class="btn btn-success pull-left" value="获取验证码" type="button">                
+                </div>
+            </div>                    
+            <div class="form-group">
+                <label class="control-label col-xs-3">设置密码:</label>
+                <div class="col-xs-9">
+                  <input id="password" name="password" class="form-control w300" placeholder="请输入6-16位的密码" type="password">
+                </div>
+            </div>                    
+            <div class="form-group">
+                <label class="control-label col-xs-3">确认密码:</label>
+                <div class="col-xs-9">
+                  <input id="againPassword" name="againPassword" class="form-control w300" placeholder="请重复输入密码" type="password">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-xs-9 col-xs-offset-3">
+                    <div class="checkbox">
+                      <label>
+                          <input name="agreement" value="ok" id="agreement" type="checkbox"> 
+                          <a href="#" data-toggle="modal" data-target="#reg_pro">我已经认真阅读并同意《维企服务协议》</a>
+                      </label>
+                    </div>
+                 </div>
+            </div>
+            
+            <div class="form-group">
+                <div class="col-xs-9 col-xs-offset-3"><button id="register" class="btn btn-lg btn-success w300" type="submit">立即注册</button></div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- 注册协议 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 注册协议 -->
+<div id="reg_pro" data-backdrop="false" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+		<div class="modal-header">
+<!--           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->          
+			<div class="row">
+				<div class="col-sm-6 text-left">
+		 		  <h4 class="modal-title" id="gridSystemModalLabel"> 企业用户注册协议 </h4>
+				</div>	
+				<div class="col-sm-6 text-right">
+		          <button type="button" class="btn btn-default reg_pro_no" data-dismiss="modal">不同意</button>
+    		      <button type="button" class="btn btn-success reg_pro_yes" data-dismiss="modal">同意</button>
+				</div>
+			</div>
+        </div>
+        <div class="modal-body"><p>维企网服务协议
+</p>
+<p>
+</p>
+<p>您注册前请仔细阅读本协议，并保证您是在充分理解并接受本协议全部内容的情况下,注册成为会员。您点击“立即注册”按钮后，本协议生效。
+</p>
+<p>
+</p>
+<p>第一条 总则
+</p>
+<p>1.1 维企网系由黑龙江龙采科技集团有限责任公司（以下简称本公司）打造的企业法律服务平台。本公司有权随时对协议内容进行单方面的变更，并以在本网站公告的方式公布，无需另行单独通知您；若您在本协议内容公告变更后继续使用本服务，即表示您完全接受修改后的协议内容，也将遵循修改后的协议内容使用网站服务。
+</p>
+<p>1.2 您注册维企网用户后，本协议即对您产生约束，届时您不能以未阅读本协议的内容等理由，主张本协议无效或要求撤销。
+</p>
+<p>1.3 维企网已经发布的或将来可能发布的各类规则均为本协议不可分割的组成部分，与协议正文具有同等法律效力。除另行明确声明外，维企网提供的服务均受本协议约束。
+</p>
+<p>
+</p>
+<p>第二条 注册条款
+</p>
+<p>2.1 您应当是具备完全民事权利能力和完全民事行为能力的自然人、法人或其他组织，并保证所填写的用户信息真实、准确、完整、合法有效，如有变动应及时更新注册资料。不作任何引人误解或者虚假的陈述，且保证维企网可以通过您所填写的联系方式与您取得联系，否则因此造成的损失与维企网无关。
+</p>
+<p>2.2 您应根据维企网对于相关服务的要求及时提供相应的身份证明等资料，否则维企网有权拒绝向您提供相关服务。
+</p>
+<p>
+</p>
+<p>第三条 账户安全
+</p>
+<p>3.1您完成注册程序或以维企网所允许的方式实际使用网站服务时，维企网为您提供唯一编号的账户。
+</p>
+<p>3.2您将对使用该账户及密码进行的一切操作及言论负完全责任，请妥善保管，对于因密码泄露所致的损失等相关责任，由您自行承担。
+</p>
+<p>3.3如您发现有他人冒用或盗用您的账户及密码或任何其他未经合法授权的使用行为，应立即以有效方式通知网站工作人员，要求维企网暂停相关服务。同时，您理解维企网对您的请求采取行动需要合理期限，在此之前，维企网对已执行的指令及(或)所导致的您的损失不承担任何责任。
+</p>
+<p>3.4 您应当准确填写并及时更新电子邮件地址、电话、地址等联系方式，以便维企网与您进行有效联系，因通过这些联系方式无法与您取得联系，导致您在使用维企网服务过程中产生任何损失或增加费用的，应由您自行承担。
+</p>
+<p>3.6您在使用维企网服务过程中，所产生的应纳税赋，以及一切硬件、软件、服务及其它方面的费用，均由您独自承担。
+</p>
+<p>
+</p>
+<p>第四条 维企网服务
+</p>
+<p>4.1您可在维企网上进行法律咨询、合同文书定制、商标注册、著作权申请、案件委托、预约法律服务专家，获取法律资讯、使用其它信息服务及技术服务支持等。
+</p>
+<p>4.2 您同意维企网可通过邮件、短信、电话等形式，向您发送注册、购物、订单信息、促销活动等告知信息。
+</p>
+<p>4.3 您同意维企网有权应政府部门（包括司法及行政部门）的要求，向其提供您在网站上填写的注册信息和交易记录等必要信息。如您涉嫌侵犯他人人身权益或者危害公共利益及国家安全，维企网亦有权在初步判断涉嫌侵权行为存在的情况下，向权利人或司法机关提供您必要的身份信息。
+</p>
+<p> 
+</p>
+<p>第五条 使用规则
+</p>
+<p>5.1在使用维企网服务过程中您自愿遵守国家法律、法规等规范性文件及网站各项规则和要求，不违背社会公共利益或公共道德，不损害他人的合法权益，不违反本协议及相关规则。否则您应以自己的名义独立承担所有的法律责任，并对因此给维企网造成的损失承担责任。
+</p>
+<p>5.2您保证不对维企网上的任何数据作商业性利用，包括但不限于在未经维企网允许，复制、传播或以其他方式使用网站上的资料信息。不做任何影响、破坏、阻碍维企网运行的行为。
+</p>
+<p>5.3维企网有权对您是否违反上述承诺做出单方认定，并根据单方认定结果适用规则予以处理或终止向您提供服务，且无须征得您的同意或提前通知到您。
+</p>
+<p>5.4 您在维企网上发布的涉嫌违法或涉嫌侵犯他人合法权利或违反本协议和/或规则的信息，维企网有权进行删除，无需争得您的同意。 
+</p>
+<p>5.5 维企网上的产品价格、数量、能否提供等产品信息随时都有可以发生变动，网站不作特别通知，下订单前请详细询问客服。
+</p>
+<p>
+</p>
+<p>第六条 责任条款
+</p>
+<p>
+</p>
+<p>6.1 维企网提供给您的全部信息、产品或服务均是在“按现状”和“按现有”的基础上提供的。除另有明确的书面说明，网站不做任何形式的、明示或默示的声明或担保。
+</p>
+<p>6.2任何情况下，维企网均不对由于互联网正常的设备维护，互联网络连接故障，电脑、通讯或其他系统的故障，电力故障，罢工，劳动争议，暴乱，起义，骚乱，生产力或生产资料不足，火灾，洪水，风暴，爆炸，战争，政府行为，司法行政机关的命令或第三方的不作为而造成的不能服务或延迟服务承担责任。
+</p>
+<p>6.3如因维企网的原因造成法律服务产品出现瑕疵,您同意维企网仅在您针对该次服务所支付的服务费用范围内承担赔偿责任。
+</p>
+<p> 
+</p>
+<p>第七条  其他约定
+</p>
+<p>
+</p>
+<p>7.1 本协议之效力、解释、变更、执行与争议解决均适用中华人民共和国大陆地区法律，如无相关法律规定的，则应参照国际通用商业惯例和（或）行业惯例。
+</p>
+<p>7.2 因本协议产生之争议，应依照中华人民共和国法律予以处理，并以北京龙采普正法律咨询有限公司注册地法院为第一审管辖法院。
+</p>
+<p> 
+</p></div>
+    	<div class="modal-footer">
+          <button type="button" class="btn btn-default reg_pro_no" data-dismiss="modal">不同意</button>
+          <button type="button" class="btn btn-success reg_pro_yes" data-dismiss="modal">同意</button>
+        </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){
+	$('.reg_pro_no').click(function(){
+		$('#agreement').attr('checked',false);	
+	});	
+	$('.reg_pro_yes').click(function(){
+		$('#agreement').attr('checked',true);	
+	});	
+});
+</script>
+
+
+<script src="validate.js" type="text/javascript"></script>
+<script src="messages_zh.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+var ctx ='/sara';
+//var ctx =;
+
+$('#register').click(function() {
+	var flag = $('input[name=agreement]:checked').val();
+    if(flag != 'ok'){
+        alert('请您同意相关条款！');
+        return;
+    }
+});
+//普通用户注册
+$('#register').submit(function() {
+	
+	var $form = $('#inputForm');
+	var flag = $("input[name='agreement']:checked").val();
+	
+// 	var code = $('#code').val();
+// 	var secMobile = $('#secMobile').val();
+	
+	$form.attr('action', ctx + '/user/custRegister');
+// 	$form.submit();
+// 	var city = $("#cityId").val();
+// 	if(city == ""){
+// 		$('#isCity').html("请选择城市!");
+// 	}else {
+// 		$.ajax({
+// 			type: "POST",
+// 			dataType: "json",
+// 			url: ctx + "/user/checkMobileCode",
+// 			data: {
+// 				secMobile : secMobile,
+// 				code : code
+// 			},
+// 			error: function () { 
+// 			},
+// 			success: function (result){ 
+// 				if(result == "1"){
+// 					$form.submit();
+// 				}else {
+					
+// 					$("#errorCode").html("验证码不正确！请重新输入");
+// 					return;
+// 				}
+// 			}
+// 		});
+// 	}
+});
+
+	//表单验证
+	//var loginName = $('#loginName').val();
+	var secMobile = $('#secMobile').val();
+	$('#inputForm').validate({
+		rules : {
+			firm : {
+				required : true
+			},
+			secMobile : {
+				required : true,
+				isMobile : true,
+				remote : ctx + "/user/checkSecMobile" + encodeURIComponent($('#secMobile').val())
+			},
+			password : {
+				required : true,
+				rangelength : [ 6, 16 ]
+			},
+			againPassword : {
+				required : true,
+				equalTo : '#password'
+			},
+			code : {
+                required : true,
+                remote : "/user/checkMobileCode"
+            }
+		},
+		messages : {
+			secMobile : {
+				required : '请输入手机号！',
+				isMobile : '请输入正确的手机号！',
+				remote : '该手机号已注册，请输入其它号码！',
+			},
+			password : {
+				required : '请输入密码！'
+			},
+			againPassword : {
+				required : '请输入密码！'
+			},
+			code : {
+				required : '请输入短信验证码！',
+				remote : '验证码错误，请重新输入'
+			}
+		}
+	});
+
+var InterValObj; 
+var count = 80; 
+var curCount;//当前剩余秒数
+
+function sendMessage() {
+	curCount = count;
+	var secMobile = $("#secMobile").val();
+	if(secMobile.length == 11 && /^1[3578]\d{9}$/.test(secMobile)){
+		$("#errorCode").html("");
+		$("#getCode").addClass("disabled");
+		$("#getCode").removeClass("btn-success");
+		$("#getCode").addClass("btn-default");
+		InterValObj = window.setInterval(SetRemainTime, 1000);
+		$.ajax({
+			type: "POST",
+			url: ctx + "/user/sendMsg",
+			data: {
+				secMobile : secMobile
+			},
+			error: function (XMLHttpRequest, textStatus, errorThrown) { 
+			},
+			success: function (data){
+				// data = parseInt(data, 10); 
+				if(data == 1){
+					$("#errorCode").html("");
+				}else if(data == 0){
+					$("#errorCode").html("该手机号已被注册,请更换其它号码后重新发送！");
+				}
+			}
+		});
+	}else{
+		$("#errorCode").html("请输入正确的手机号！");
+	}
+}
+
+function SetRemainTime() {
+	if (curCount == 0) {                
+		window.clearInterval(InterValObj);
+		$("#getCode").removeClass("disabled");
+		$("#getCode").removeClass("btn-default");
+		$("#getCode").addClass("btn-success");
+		$("#getCode").val("重新发送验证码");
+	}else {
+		curCount--;
+		$("#getCode").val(curCount + "秒后重新发送");
+	}
+}
+
+</script>
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+
+
+
+<div class="bot_bg min">
+  <div class="nr">
+    <div class="bot_l">
+      <div class="bot_l_title">关于维企</div>
+      <a href="#">关于我们</a><a href="#">联系我们</a><a href="#">维企攻略</a><a href="#">免责声明</a></div>
+    <div class="bot_l">
+      <div class="bot_l_title">新手指导</div>
+      <a href="#">注册登录</a><a href="#">下单购买</a><a href="#">支付方式</a><a href="#">服务流程</a></div>
+    <div class="bot_l">
+      <div class="bot_l_title">常见问题</div>
+      <a href="#">商标申请</a><a href="#">版权申请</a><a href="#">公司注册</a><a href="#">公司变更</a></div>
+    <div class="bot_r" style="float: right; padding: 30px 50px;">
+    	<a href="#" class="bot_weibo">官方微博</a>
+      	<div class="bot_tel">400-8893-779</div>
+      	<div class="bot_t">免费咨询电话（咨询、建议、投诉）</div>
+    </div>
+    <div class="bot_ewm" style="width: 130px; float: right; padding: 30px 50px 0px 0px; text-align: center; line-height: 25px; font-size: 15px; color: rgb(72, 72, 72);"><img src="ewm.jpg">微信服务号</div>
+    <div class="cl"></div>
+  </div>
+</div>
+
+</body>
+</html>

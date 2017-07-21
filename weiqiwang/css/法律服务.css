@@ -1,0 +1,222 @@
+.topdaoh{
+	width:100%;
+	height: 30px;
+	background-color: #E9E9E9;
+	line-height: 30px;
+	}
+.topdaoh .sleft{
+	color: #6B729A;
+	font-size: 14px;
+	float: left;
+	margin-left: 200px;
+	}
+.topdaoh .sright{
+	/*color: #69A430;*/
+	font-size: 12px;
+	float: right;
+	margin-right: 200px;
+	}
+.topdaoh .sright a:nth-of-type(1){
+	color: #69A430;
+	text-decoration: none;
+}
+.topdaoh .sright a:nth-of-type(1):hover{
+	text-decoration: underline;
+	color: #4B0082;
+}
+.topdaoh .sright a:nth-of-type(2){
+	color: #69A430;
+	text-decoration: none;
+}
+.topdaoh .sright a:nth-of-type(2):hover{
+	text-decoration: underline;
+}
+.topdaoh .sright a:nth-of-type(3){
+	color: #69A430;
+	text-decoration: none;
+}
+.topdaoh .sright a:nth-of-type(3):hover{
+	text-decoration: underline;
+}
+.topdaoh .sright span{color:#6B729A;vertical-align: middle;}
+.topdaoh .sright span:hover{text-decoration: underline;}
+.topdaoh .sright img{vertical-align: middle}
+.logo{width:1200px;height: 115px;margin: 0 auto;}
+.logo img:nth-of-type(1){margin-top: 20px;}
+.logo img:nth-of-type(2){margin-left: -5px;margin-top: 20px;}
+.logo .ul1{float: right;height: 115px;width: 650px; line-height: 115px;margin-right: -225px;}
+.logo .ul1 li{float: left;margin-left: 20px;}
+.logo .ul1 li a{text-decoration: none;color: black;padding: 20px 40px;}
+.logo .ul1 li:hover a{background-color: #68A32C;text-decoration: underline;color: white;}
+hr{margin-top: 2px;}
+
+.con1{width: 1100px;height: 300px;margin: 10px auto;border: 1px solid #ccc;display: flex;margin-bottom: 45px;}
+.con1>.con1div1{width: 700px;height: 300px;border:1px solid;box-sizing: border-box;background:url(../维企网/20170420002011/banner1.jpg) bottom center;background-size: 1000px;text-align: center;}
+.con1>.con1div2{width: 400px;height: 300px;border:1px solid;box-sizing: border-box;padding: 10px;}
+.con1 .con1div1 img{width: 700px;height: 300px;}
+.con1 .con1div2 h3{margin-bottom: 20px;}
+.con1 .con1div2 .p1{font-size: 14px;font-weight: 100;}
+.con1>.con1div2>.p1>span{font-size: 45px;color: red;}
+.con1 .con1div2 .p2{color: red;font-size: 10px;}
+.con1 .con1div2 input{margin-top: 20px;font-size: 12px;padding: 5px 10px;}
+.con2{
+	width: 1200px;
+	margin: 0 auto;
+	margin-bottom: 45px;
+}
+.con2 .con2div1{
+	width: 100%;
+	background: url(../维企网/20170420001454/icon17.png) no-repeat center center;
+	text-align: center;font-size: 1.5em;
+	margin-bottom: 50px;
+}
+
+.con2>p{
+	
+	text-align: center;
+	font-size: 0.75em;
+	line-height: 1.5em;
+	
+}
+
+.con3{
+	width: 100%;
+	background-color: #F3F3F3;
+	margin-bottom: 50px;
+	padding-top: 45px;
+}
+.con3 .con3div1{
+	width: 1200px;
+	margin: 0 auto;
+	background: url(../维企网/20170420001454/icon17.png) no-repeat center center;
+	text-align: center;font-size: 1.5em;
+	margin-bottom: 50px;
+}
+.con3div2{
+	width: 1200px;
+	margin: 0 auto;
+	display: flex;
+}
+.con3div2 .zixun{
+	width: 240px;
+	box-sizing: border-box;
+}
+.con3div2 .zixun .zixun1{
+	margin-top: 20px;
+	width: 126px;
+	margin: 20px auto;
+}
+.con3div2 .zixun .zixun1>img{
+	border: 2px solid #bcbcbc;
+	width: 126px;border-radius: 50%;
+}
+.con3div2 .zixun .zixun2{
+	width: 126px;
+	margin: 0 auto;
+	text-align: center;
+	height: 45px;
+	line-height: 45px;
+	background:url(../维企网/20170420001454/bg5.png) no-repeat center center;
+	border-bottom: 3px solid #ccc;
+	color: white;
+	font-size: 0.75em;
+}
+.con3div2 .zixun>p{
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 0.75em;
+}
+.fuwu{
+	width: 1200px;
+	margin: 0 auto ;
+	margin-bottom: 30px;
+}
+.fuwu .con3div1{
+	width: 1200px;
+	margin: 0 auto;
+	background: url(../维企网/20170420001454/icon17.png) no-repeat center center;
+	text-align: center;font-size: 1.5em;
+	margin-bottom: 50px;
+}
+.fuwu .youshi{
+	
+	box-sizing: border-box;
+	width: 100%;
+	height:500px;
+	background: url(../维企网/20170420001454/pk.png) no-repeat center center;
+	position: relative;
+}
+
+.fuwu .youshi>div{
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	border-radius: 50%;
+	box-sizing: border-box;
+}
+.fuwu .youshi .bleft1{
+	border: 8px solid #ccc;
+	top: 50%;
+	margin-top: -100px;left: 80px;
+}
+.fuwu .youshi .brigt1{
+	border: 8px solid #ccc;
+	top: 50%;
+	margin-top: -100px;right: 80px;
+}
+.fuwu .youshi .gleft{
+	border: 3px solid #6AA530;
+	top: 50%;margin-top: -80px;
+	left: 110px;
+}
+.fuwu .youshi .gright{
+	border: 3px solid #6AA530;
+	top: 50%;margin-top: -80px;
+	right: 50px;
+}
+.fuwu .youshi .gleft,.fuwu .youshi .gright{
+	text-align: center;
+	
+}
+.fuwu .youshi .gleft>h3,.fuwu .youshi .gright>h3{
+	margin-top: 50px;
+	font-size: 20px;
+}
+.fuwu .youshi .gleft>p,.fuwu .youshi .gright>p{
+	color: #6AA530;
+}
+.fuwu .youshi .gleft>p:nth-of-type(2),.fuwu .youshi .gright>p:nth-of-type(2){
+	font-size: 12px;
+}
+.fuwu .youshi .gleft>p:nth-of-type(1),.fuwu .youshi .gright>p:nth-of-type(1){
+	margin: 20px 0;
+}
+
+
+
+
+
+
+
+.footer{width:100%;height: 200px;background-color: #E5E5E5;border-top: 3px solid #6AA530;}
+.footer .box{
+	width: 1200px;height: 200px;margin: 0 auto;display: flex;
+}
+.footer .fdiv1{
+	width: 200px;height: 170px;box-sizing: border-box;padding-top: 30px;text-align: center;
+}
+
+.footer .fdiv1>p{font-weight: 900;}
+.footer .fdiv1>a{text-decoration: none;color: black;font-weight: lighter;width: 200px;display: inline-block;padding: 3px 0;}
+.footer .fdiv1>a:hover{text-decoration: underline;}
+.footer .fdiv1>a:active{border: 1px dotted black;}
+
+.footer .fdiv1:nth-of-type(4){margin-left: 20px;width: 230px;}
+.footer .fdiv1:nth-of-type(4) p{font-size: 15px;font-weight: normal;}
+.footer .fdiv1:nth-of-type(5){width: 250px;text-align: left;}
+.footer .fdiv1:nth-of-type(5) a{text-decoration: none;color: black;font-weight:normal;font-size: 15px;}
+.footer .fdiv1:nth-of-type(5) a:hover{
+	text-decoration: underline;color: #4B0082;
+}
+.footer .fdiv1:nth-of-type(5)>p{margin-top: 15px;}
+.footer .fdiv1:nth-of-type(5) p{color: black;font-weight: normal;font-size: 15px;}
